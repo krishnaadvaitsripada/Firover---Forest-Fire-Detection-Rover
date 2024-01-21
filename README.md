@@ -17,11 +17,11 @@ Our rovers patrol fire-prone high-risk areas in forests. They detect early fires
 **Deployment with Edge Impulse:** Edge Impulse is a comprehensive development platform designed to facilitate the implementation of machine learning (ML) models on edge devices. 
 
 ## Challenges we ran into
-1.Controlling Rover Speed: Navigating the delicate balance of rover speed presented challenges in ensuring effective patrolling without compromising safety.
+1. **Controlling Rover Speed**: Navigating the delicate balance of rover speed presented challenges in ensuring effective patrolling without compromising safety.
 
-2. Mapping: Mapping various ports of the Arduino Nano for seamless integration with other devices.
+2. **Mapping**: Mapping various ports of the Arduino Nano for seamless integration with other devices.
 
-3. ML Model Deployment: Uploading the ML model onto the chip presented hurdles. We explored methods such as model compression using TensorFlow Lite, EloquentTinyML, employing a secondary device for image processing, and utilizing the Edge Impulse platform.
+3. **ML Model Deployment**: Uploading the ML model onto the chip presented hurdles. We explored methods such as model compression using TensorFlow Lite, EloquentTinyML, employing a secondary device for image processing, and utilizing the Edge Impulse platform.
 
 ## Accomplishments that we're proud of
 This was the first hardware project for the majority of our team. We learned to build a rover from scratch in less than 24 hours. 
