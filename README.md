@@ -12,21 +12,24 @@ Our rovers patrol fire-prone high-risk areas in forests. They detect early fires
 ## How we built it
 **Autonomous Rover:** We constructed an autonomous rover using Arduino Nano, addressing challenges in controlling its speed and navigating the terrain.
 
-**Machine Learning Model:** We trained a Convolutional Neural Network (CNN) to classify images as either fire or non-fire. The model architecture includes convolutional layers, max-pooling, dropout for regularization, and dense layers for classification. A dataset of approximately 1200 photos was collected and augmented for robust training. The model was trained for 20 epochs using the keras framework on tensorflow.
+**Machine Learning Model:** We trained a Convolutional Neural Network (CNN) to classify images as either fire or non-fire. The model architecture includes convolutional layers, max-pooling, dropout for regularization, and dense layers for classification. A dataset of approximately 1200 photos was collected and augmented for robust training. The model was trained for 20 epochs using the keras framework on tensorflow. The final model had an accuracy of 93%.
 
 **Deployment with Edge Impulse:** Edge Impulse is a comprehensive development platform designed to facilitate the implementation of machine learning (ML) models on edge devices. 
 
 ## Challenges we ran into
-1. controlling the speed of the rover
-2. understanding the mapping 
-3. uploading the ML model onto the chip
+1.Controlling Rover Speed: Navigating the delicate balance of rover speed presented challenges in ensuring effective patrolling without compromising safety.
+
+2. Mapping: Mapping various ports of the Arduino Nano for seamless integration with other devices.
+
+3. ML Model Deployment: Uploading the ML model onto the chip presented hurdles. We explored methods such as model compression using TensorFlow Lite, EloquentTinyML, employing a secondary device for image processing, and utilizing the Edge Impulse platform.
 
 ## Accomplishments that we're proud of
 This was the first hardware project for the majority of our team. We learned to build a rover from scratch in less than 24 hours. 
 
 ## What we learned
-1. How to train ML models to detect fire with 93% accuracy. 
-2. How to upload ML models onto Arduino using Arduino TinyML kit. 
-
+1. Perfecting High-Accuracy Machine Learning Models.
+2. Bringing ML Models to Life on Arduino with TinyML.
+3. Understanding the Blueprint and Code of Autonomous Vehicles.
+   
 ## What's next for Firover - Forest Fire Detection Rover
 Next, we want to deploy patrolling drones along with the rovers to detect fires. 
