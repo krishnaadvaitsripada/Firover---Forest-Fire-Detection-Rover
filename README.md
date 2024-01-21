@@ -10,9 +10,9 @@ Many such recent forest fire tragedies inspired our project Firover - Forest Fir
 Our rovers patrol fire-prone high-risk areas in forests. They detect early fires using machine learning and send distress signals, so the fire can be stopped before it spreads out of control. 
 
 ## How we built it
-1. We built an autonomous rover using Arduino Nano. 
-2. We trained a machine learning model to detect fire. 
-3. We uploaded the model onto the Arduino using edge impulse.
+**Autonomous Rover:** We constructed an autonomous rover using Arduino Nano, addressing challenges in controlling its speed and navigating the terrain.
+**Machine Learning Model:** We trained a Convolutional Neural Network (CNN) to classify images as either fire or non-fire. The model architecture includes convolutional layers, max-pooling, dropout for regularization, and dense layers for classification. A dataset of approximately 1200 photos was collected and augmented for robust training. The model was trained for 20 epochs using the keras framework on tensorflow.
+**Deployment with Edge Impulse:** Edge Impulse is a comprehensive development platform designed to facilitate the implementation of machine learning (ML) models on edge devices. 
 
 ## Challenges we ran into
 1. controlling the speed of the rover
