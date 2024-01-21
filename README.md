@@ -10,18 +10,18 @@ Many such recent forest fire tragedies inspired our project Firover - Forest Fir
 Our rovers patrol fire-prone high-risk areas in forests. They detect early fires using machine learning and send distress signals, so the fire can be stopped before it spreads out of control. 
 
 ## How we built it
-**Autonomous Rover:** We constructed an autonomous rover using Arduino Nano, addressing challenges in controlling its speed and navigating the terrain.
+**Autonomous Rover:** We constructed an autonomous rover using Arduino Nano, addressing challenges in controlling its speed and navigating the terrain. Striking the right balance, both physically and algorithmically, becomes crucial to prevent tipping or instability. Designing effective control systems that adapt to uneven surfaces, sudden obstacles, or changes in incline is essential. Moreover, the integration of sensors for real-time data on terrain conditions, combined with robust algorithms, plays a pivotal role in maintaining the rover's equilibrium.
 
 **Machine Learning Model:** We trained a Convolutional Neural Network (CNN) to classify images as either fire or non-fire. The model architecture includes convolutional layers, max-pooling, dropout for regularization, and dense layers for classification. A dataset of approximately 1200 photos was collected and augmented for robust training. The model was trained for 20 epochs using the keras framework on tensorflow. The final model had an accuracy of 93%.
 
-**Deployment with Edge Impulse:** Edge Impulse is a comprehensive development platform designed to facilitate the implementation of machine learning (ML) models on edge devices. 
+**Deployment with Edge Impulse:** Edge Impulse is a comprehensive development platform designed to facilitate the implementation of machine learning (ML) models on edge devices. Edge Impulse facilitates the training and deployment of custom ML models, allowing seamless integration into edge devices like microcontrollers. Its versatility extends to a range of applications, from sensor data analysis to voice and image recognition, making it a valuable asset in the realm of IoT and edge computing. 
 
 ## Challenges we ran into
 1. **Controlling Rover Speed**: Navigating the delicate balance of rover speed presented challenges in ensuring effective patrolling without compromising safety.
 
-2. **Mapping**: Mapping various ports of the Arduino Nano for seamless integration with other devices.
+2. **Mapping**: Mapping various ports of the Arduino Nano for seamless integration with other devices. 
 
-3. **ML Model Deployment**: Uploading the ML model onto the chip presented hurdles. We explored methods such as model compression using TensorFlow Lite, EloquentTinyML, employing a secondary device for image processing, and utilizing the Edge Impulse platform.
+3. **ML Model Deployment**: Uploading the ML model onto the chip presented hurdles. We explored methods such as model compression using TensorFlow Lite, EloquentTinyML, employing a secondary device for image processing, and utilizing the Edge Impulse platform. Some models we explored were too large to fit onto the arduino nano while others were not nuanced enough to efficiently classify images.
 
 ## Accomplishments that we're proud of
 This was the first hardware project for the majority of our team. We learned to build a rover from scratch in less than 24 hours. 
